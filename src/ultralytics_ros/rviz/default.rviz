@@ -1,0 +1,349 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /detection_marker1
+        - /Image1
+        - /PointCloud21
+        - /Axes1
+        - /TF1
+        - /TF1/Frames1
+        - /TF1/Tree1
+      Splitter Ratio: 0.5029411911964417
+    Tree Height: 656
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Name: Time
+    SyncMode: 0
+    SyncSource: Image
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /detection_marker
+      Name: detection_marker
+      Namespaces:
+        detection: true
+      Queue Size: 100
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 0; 0
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: detection_cloud
+      Position Transformer: XYZ
+      Queue Size: 1
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Points
+      Topic: /detection_cloud
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 0.5
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 77.83099365234375
+        Min Value: -78.86199951171875
+        Value: true
+      Axis: X
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: AxisColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: lidar_cloud
+      Position Transformer: XYZ
+      Queue Size: 1
+      Selectable: true
+      Size (Pixels): 1
+      Size (m): 0.009999999776482582
+      Style: Points
+      Topic: /points_raw
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /yolo_image
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 11.472000122070312
+        Min Value: 0.5
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic: /kinect2/hd/points
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Class: rviz/Axes
+      Enabled: false
+      Length: 1
+      Name: Axes
+      Radius: 0.10000000149011612
+      Reference Frame: <Fixed Frame>
+      Show Trail: false
+      Value: false
+    - Class: rviz/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        kinect2_ir_optical_frame:
+          Value: false
+        kinect2_link:
+          Value: true
+        kinect2_rgb_optical_frame:
+          Value: false
+        object_0_0:
+          Value: true
+        object_0_1:
+          Value: true
+        object_0_2:
+          Value: true
+        object_0_3:
+          Value: true
+        object_0_4:
+          Value: true
+        object_39_0:
+          Value: true
+        object_39_1:
+          Value: true
+        object_39_2:
+          Value: true
+        object_41_2:
+          Value: true
+        object_41_3:
+          Value: true
+        object_41_4:
+          Value: true
+        object_62_2:
+          Value: true
+        object_62_3:
+          Value: true
+        object_62_4:
+          Value: true
+        object_62_5:
+          Value: true
+        object_63_2:
+          Value: true
+        object_63_3:
+          Value: true
+        object_63_4:
+          Value: true
+        object_63_5:
+          Value: true
+        object_65_3:
+          Value: true
+        object_65_5:
+          Value: true
+        object_67_2:
+          Value: true
+        object_67_3:
+          Value: true
+        object_67_4:
+          Value: true
+        object_79_3:
+          Value: true
+      Marker Alpha: 1
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        kinect2_link:
+          kinect2_rgb_optical_frame:
+            kinect2_ir_optical_frame:
+              {}
+            object_0_0:
+              {}
+            object_0_1:
+              {}
+            object_0_2:
+              {}
+            object_0_3:
+              {}
+            object_0_4:
+              {}
+            object_39_0:
+              {}
+            object_39_1:
+              {}
+            object_39_2:
+              {}
+            object_41_2:
+              {}
+            object_41_3:
+              {}
+            object_41_4:
+              {}
+            object_62_2:
+              {}
+            object_62_3:
+              {}
+            object_62_4:
+              {}
+            object_62_5:
+              {}
+            object_63_2:
+              {}
+            object_63_3:
+              {}
+            object_63_4:
+              {}
+            object_63_5:
+              {}
+            object_65_3:
+              {}
+            object_65_5:
+              {}
+            object_67_2:
+              {}
+            object_67_3:
+              {}
+            object_67_4:
+              {}
+            object_79_3:
+              {}
+      Update Interval: 0
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: kinect2_link
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 4.454076766967773
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Field of View: 0.7853981852531433
+      Focal Point:
+        X: -0.0379217304289341
+        Y: -0.08491307497024536
+        Z: 1.346328616142273
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: -1.0902035236358643
+      Target Frame: <Fixed Frame>
+      Yaw: 4.855408191680908
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1209
+  Hide Left Dock: false
+  Hide Right Dock: true
+  Image:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000400000000000003b60000041bfc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d0000031b000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d006100670065010000035e000000fa0000001600ffffff000000010000010f000002aefc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003e000002ae000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000008630000003efc0100000002fb0000000800540069006d0065010000000000000863000003bc00fffffffb0000000800540069006d00650100000000000004500000000000000000000004a70000041b00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 2147
+  X: 133
+  Y: 262
